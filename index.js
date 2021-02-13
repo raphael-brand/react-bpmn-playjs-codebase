@@ -1,5 +1,6 @@
 const express = require('express');
 const webpack = require('webpack');
+// const helmet = require('helmet');
 const webpackMiddleware = require('webpack-dev-middleware');
 
 // Setup
@@ -17,6 +18,7 @@ const middleware = webpackMiddleware(compiler, {
   }
 });
 app.use(middleware);
+// app.use(helmet());
 app.get('/', (req, res) => {
   res.sendFile('index.html', { root: __dirname });
 });
