@@ -10,10 +10,10 @@ import {
 
 // import Navigation component
 // import Homepage component
-import HomePage from './pages/HomePage';
-import FrameworksPage  from './pages/FrameworksPage';
+import HomePage from 'home';
+import FrameworksPage  from 'frameworks';
 // import Modeler page component
-import ModelerPage from './pages/ModelerPage';
+import ModelerPage from 'modeler';
 
 export default () => {
   return (<>

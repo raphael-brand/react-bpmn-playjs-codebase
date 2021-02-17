@@ -5,7 +5,7 @@ import BpmnJs from "bpmn-js/dist/bpmn-modeler.development.js";
 // export a modeler page component
 // use the modeler to instantiate a modeler instanceof
 
-function ModelerPage() {
+const ModelerPage = () => {
   // We can call useParams() here to get the params,
   // or in any child element as well!
  // ...
