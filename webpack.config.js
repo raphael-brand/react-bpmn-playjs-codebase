@@ -6,7 +6,15 @@ module.exports = {
     index: './src/index.jsx',
     app: './src/App.jsx'
  },
-  module: {
+ resolve: {
+     alias: {
+         pages: path.resolve(__dirname, 'src/pages/'),
+         frameworks: 'pages/FrameworksPage.jsx',
+         home: 'pages/HomePage.jsx',
+         modeler: 'pages/ModelerPage.jsx',
+     },
+ },
+ module: {
     rules: [
       {
         test: (m) => { return /\.(js|jsx)$/.test(m) },
