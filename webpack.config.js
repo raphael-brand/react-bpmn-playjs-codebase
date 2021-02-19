@@ -31,10 +31,30 @@ module.exports = {
       },
       {
         test: (m) => { return /\.css$/.test(m) },
-        exclude: (m) => { return /node_modules/.test(m) },
         use: [
           'style-loader',
-          'css-loader'
+          {
+           loader: 'css-loader',
+           options: {
+            importLoaders: 1,
+            modules: true
+           }
+        },
+        ],
+        
+        include: /bpmn\-js.*\.css$/
+      
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
         ]
       },
       {
