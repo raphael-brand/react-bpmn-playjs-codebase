@@ -12,13 +12,17 @@ const App = (props) => {
   // const { setCurrentUser } = props;
   // const unsubscribeFromAuth = null;
 
+  import HomePage from './components/HomePage';
+  import FrameworksPage from './components/FrameworksPage';
+  import ModelerPage from './components/ModelerPage';
+
   return (
     <div className="App">
       {<><Header />
       <Switch>
-        <Route exact path="/" component={} />
-        <Route exact path="/" component={} />
-        <Route exact path="/" component={} />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/" component={FrameworksPage} />
+        <Route exact path="/" component={ModelerPage} />
         <Route exact path="/signin" />
       </Switch></>}
 
