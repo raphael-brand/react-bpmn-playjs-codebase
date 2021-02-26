@@ -1,7 +1,8 @@
-import { PageComponent as Page } from './PageComponent';
+import React from 'react';
+import PageComponent from './PageComponent';
 
 const ModelerPage = () => {
-    return <Page title="Modeler" />
+    return <PageComponent title="Modeler" />
 }
 
 export default ModelerPage;
