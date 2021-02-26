@@ -1,7 +1,8 @@
-import { PageComponent as Page } from './PageComponent';
+import React from "react";
+import PageComponent from './PageComponent';
 
 const FrameworksPage = () => {
-    return <Page title="Frameworks" />
+    return <PageComponent title="Frameworks" />
 }
 
 export default FrameworksPage;

@@ -1,9 +1,9 @@
 import React from "react";
-const Page = (props) => {
+const PageComponent = (props) => {
     
     return (
       <h1>{props.title}</h1>
     );
 }
 
-export default Page;
+export default PageComponent;
