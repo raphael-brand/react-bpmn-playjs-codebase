@@ -1,7 +1,8 @@
-import { PageComponent as Page } from './PageComponent';
+import React from "react";
+import PageComponent from './PageComponent';
 
 const HomePage = () => {
-    return <Page title="Home" />
+    return (<PageComponent title="Home" />)
 }
 
 export default HomePage;
