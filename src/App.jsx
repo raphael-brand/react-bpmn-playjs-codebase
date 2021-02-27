@@ -1,28 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import logo from "./cra-logo.png";
 import "./App.css";
-import { Route, Switch, Redirect } from "react-router-dom";
-import { connect } from "react-redux";
-// import { SetCurrentUser } from "./redux/user/user.actions";
-// import { selectCurrentUser } from "./redux/user/user.selector";
-import { createStructuredSelector } from "reselect";
+import { Route, Switch } from "react-router-dom";
+
+import HomePage from './components/HomePage';
+import FrameworksPage from './components/FrameworksPage';
+import ModelerPage from './components/ModelerPage';
+
 import Header from "./components/Header";
 const App = (props) => {
   //these variables are used for firebase signin(good examples of using redux to pass the user as a prop to the app.jsx)
   // const { setCurrentUser } = props;
   // const unsubscribeFromAuth = null;
-
-  import HomePage from './components/HomePage';
-  import FrameworksPage from './components/FrameworksPage';
-  import ModelerPage from './components/ModelerPage';
-
+  
+  
   return (
-    <div className="App">
+      <div className="App">
       {<><Header />
       <Switch>
+        <Route exact path="/" component={ModelerPage} />
         <Route exact path="/" component={HomePage} />
         <Route exact path="/" component={FrameworksPage} />
-        <Route exact path="/" component={ModelerPage} />
         <Route exact path="/signin" />
       </Switch></>}
 
@@ -36,18 +34,5 @@ const App = (props) => {
     </div>
   );
 };
-
-{
-  /* this is how we pass props with redux to our App.jsx */
-}
-{
-  /* const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser,
-});
-
-const mapDispatchToProps = (dispatch) => ({
-  setCurrentUser: (user) => dispatch(SetCurrentUser(user)),
-}); */
-}
 
 export default App;
