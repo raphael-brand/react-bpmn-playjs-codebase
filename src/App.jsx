@@ -18,9 +18,9 @@ const App = (props) => {
       <div className="App">
       {<><Header />
       <Switch>
-        <Route exact path="/" component={ModelerPage} />
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/" component={FrameworksPage} />
+        <Route exact path="/frameworks" component={FrameworksPage} />
+        <Route exact path="/modeler" component={ModelerPage} />
         <Route exact path="/signin" />
       </Switch>
         <Link to={HomePage}>learn react</Link>

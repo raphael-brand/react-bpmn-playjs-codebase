@@ -1,9 +1,9 @@
 const items = [
   {
-  "React":"React (also known as React.js or ReactJS) is an open-source, front end, JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications."
+  "React":"React (also known as React. js or ReactJS) is an open-source, front end, JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications."
  },
 {
-  "Backbone":"Backbone.js is a JavaScript library with a RESTful JSON interface and is based on the model–view–controller application design paradigm. Backbone is known for being lightweight, as its only hard dependency is on one JavaScript library, Underscore.js, plus jQuery for use of the full library."
+  "Backbone":"Backbone.js is a JavaScript library with a RESTful JSON interface and is based on the model–view–controller application design paradigm. Backbone is known for being lightweight, as its only hard dependency is on one JavaScript library, Underscore. js, plus jQuery for use of the full library."
 },{
   "AngularJS":"AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. ... AngularJS is what HTML would have been, had it been designed for applications."  
 },
