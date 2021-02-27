@@ -1,10 +1,10 @@
 import React from "react";
-const PageComponent = (props) => {
+cgit onst PageComponent = (props) => {
     
     return (
         <>
       <h1>{props.title}</h1>
-      {props.content}
+      {props.children}
       </>
     );
 }
