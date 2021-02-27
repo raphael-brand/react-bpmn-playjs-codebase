@@ -21,7 +21,7 @@ export class SearchInput extends Component {
   }
  
   onInputEnd(event) {
-    if(event.target.value != '' && event.target.value != this.default_text) {
+    if(event.target.value !== '' && event.target.value !== this.default_text) {
 
       this.setState({ search_term: event.target.value });
       this.startSearch(event.target.value);
@@ -46,7 +46,7 @@ export class SearchInput extends Component {
         this.status.innerText = '';
      }
 
-     if(this.search.current.value != this.default_text){
+     if(this.search.current.value !== this.default_text){
        this.status.innerText = '';
        this.search.current.value = '';
      }
@@ -59,7 +59,7 @@ export class SearchInput extends Component {
      this.startSearch(this.state.search_term);
    }
   
-   if(event.target.value === this.default_text || event.target.value == '') {
+   if(event.target.value === this.default_text || event.target.value === '') {
       this.resetSearchInput();
    }
    
@@ -67,7 +67,7 @@ export class SearchInput extends Component {
   }
   
   emptyText(event) {
-    if(this.default_text == event.target.value || this.state.current_search !== '')
+    if(this.default_text === event.target.value || this.state.current_search !== '')
       this.search.current.value = '';
   }
   
