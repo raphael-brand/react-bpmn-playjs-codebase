@@ -1,10 +1,8 @@
 import React from "react";
-
+import Navigation from './../pages/Navigation';
 const Header = (props) => {
   return (
-    <div>
-      <h1>Header Section</h1>
-    </div>
+      <Navigation />
   );
 };
 
