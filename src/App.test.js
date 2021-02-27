@@ -1,10 +1,14 @@
 import React from "react";
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
-import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+import Enzyme, {shallow} from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
+
+import App from './App';
+import FrameworksPage from './components/FrameworksPage';
+
+Enzyme.configure({adapter: new Adapter()});
+
+
+it('renders without crashing', () => {
+    let app = shallow(<FrameworksPage/>)
 });
