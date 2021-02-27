@@ -1,5 +1,5 @@
 import React from "react";
-cgit onst PageComponent = (props) => {
+const PageComponent = (props) => {
     
     return (
         <>
