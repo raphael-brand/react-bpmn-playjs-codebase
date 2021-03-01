@@ -1,18 +1,17 @@
 import PropTypes from "prop-types";
 
 const ResultList = (props) => {
-//    const result = [];
-//    const input = props.items;
-
-/*    const output = Object.keys(input).map((key) => {
-      return {
-        Number: key,
-        Name: input[key]
-      }
+    let result = [];
+    const input = props.items;
+    input.forEach((ds) => {
+        let _data = { 
+            name: Object.keys(ds),
+            text: Object.values(ds)
+        }
+        
+        result.push(_data);
     });
-    return [output];
-*/
-return []
+    return result;
 }
 
 export default ResultList;
