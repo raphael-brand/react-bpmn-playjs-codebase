@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 const ResultListItem = (props) => {
-  return (<p>{props.text}</p>)
+  return (<p>{props.name}</p>)
 }
+
+export default ResultListItem;
