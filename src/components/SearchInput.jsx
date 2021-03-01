@@ -1,6 +1,6 @@
 import React, { Component, createRef } from 'react';
 
-export class SearchInput extends Component {
+export default class SearchInput extends Component {
   
   constructor(props) {
     super(props);

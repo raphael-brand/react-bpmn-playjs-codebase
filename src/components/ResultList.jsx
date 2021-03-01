@@ -1,4 +1,6 @@
+import React from 'react';
 import PropTypes from "prop-types";
+import ResultListItem from "./ResultListItem";
 
 const ResultList = (props) => {
     let result = [];
@@ -8,8 +10,11 @@ const ResultList = (props) => {
             name: Object.keys(ds),
             text: Object.values(ds)
         }
+        result.push(<ResultListItem
+            name={_data.name}
+            text={_data.text}
+        />);
         
-        result.push(_data);
     });
     return result;
 }
