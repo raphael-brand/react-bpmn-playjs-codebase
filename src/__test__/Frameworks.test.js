@@ -4,7 +4,7 @@ import Enzyme, {render} from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import FrameworksPage from './../components/FrameworksPage'
 import PageComponent from './../components/PageComponent'
-import SearchInput from './../components/SearchInput'
+import {SearchInput} from './../components/SearchInput'
 import ResultList from './../components/ResultList'
 
 import items from './../pages/items';
