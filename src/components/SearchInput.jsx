@@ -25,6 +25,7 @@ export class SearchInput extends Component {
     if(event.target.value !== '' && event.target.value !== this.default_text) {
 
       this.setState({ search_term: event.target.value });
+      this.props.filter(this.state.search_term);
       this.startSearch(event.target.value);
     }
  }
@@ -34,8 +35,8 @@ export class SearchInput extends Component {
         this.setState({status: `Searching for: ${value}`});
         this.status.current.innerText = `Searching for: ${value}`;
         this.setState({current_search: value});
-        this.props.filter(value);
-      return
+        // this.props.filter()(value);
+        return
     }
       
     this.resetSearchInput();
@@ -45,11 +46,11 @@ export class SearchInput extends Component {
      if(this.state.current_search.length && this.state.status.length) {
         this.setState({search_term: ''});
         this.setState({status: ''})
-        this.status.innerText = '';
+        // this.status.innerText = '';
      }
 
      if(this.search.current.value !== this.default_text){
-       this.status.innerText = '';
+       // this.status.innerText = '';
        this.search.current.value = '';
      }
 }
