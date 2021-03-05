@@ -2,7 +2,7 @@ import React from "react";
 import PageComponent from './PageComponent';
 import {SearchInput} from './SearchInput';
 import ResultList from './ResultList';
-import items from './../pages/items';
+import items from './items';
 
 const FrameworksPage = () => {
     return (
