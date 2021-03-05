@@ -1,4 +1,5 @@
 import React, { Component, createRef } from 'react';
+import PropTypes from "prop-types";
 
 export class SearchInput extends Component {
   
@@ -30,9 +31,10 @@ export class SearchInput extends Component {
   
   startSearch(value) {
     if(value && value !== this.state.current_search) {
-      this.setState({status: `Searching for: ${value}`});
-      this.status.current.innerText = `Searching for: ${value}`;
-      this.setState({current_search: value});
+        this.setState({status: `Searching for: ${value}`});
+        this.status.current.innerText = `Searching for: ${value}`;
+        this.setState({current_search: value});
+        this.props.filter(value);
       return
     }
       
@@ -80,3 +82,6 @@ export class SearchInput extends Component {
   }
 };
 
+SearchInput.propTypes = {
+    filter: PropTypes.func.isRequired
+}

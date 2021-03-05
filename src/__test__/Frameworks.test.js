@@ -6,7 +6,6 @@ import FrameworksPage from './../components/FrameworksPage'
 import PageComponent from './../components/PageComponent'
 import {SearchInput} from './../components/SearchInput'
 import ResultList from './../components/ResultList'
-
 import items from './../components/items';
 
 Enzyme.configure({adapter: new Adapter()});
