@@ -19,8 +19,8 @@ Enzyme.configure({adapter: new Adapter()});
 it('loads the array into the page component', () => {
 	let app = render(
 		<PageComponent title="Frameworks">
-        	  <SearchInput />
-        	  <ResultList items={items} />
+        	  <SearchInput filter={() => {}}/>
+        	  <ResultList items={items} filter={""} />
     		</PageComponent>
 	);
 });
